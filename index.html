@@ -3,149 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FotoGo - Photo Perfect, On the Go!</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            text-align: center;
-            background-color: #f4f4f4;
-        }
-        .container {
-            width: 90%;
-            margin: auto;
-        }
-        h1, h2 {
-            color: #333;
-        }
-
-        /* Banner */
-        .banner {
-            width: 100%;
-            height: 300px;
-            background: url('banner.jpg') no-repeat center;
-            background-size: cover;
-        }
-
-        /* Logo */
-        .logo {
-            width: 150px;
-            height: auto;
-            margin: 20px auto;
-        }
-
-        /* Tìm kiếm */
-        .search-box {
-            background-color: #ddd;
-            padding: 20px;
-            margin-bottom: 20px;
-        }
-        .search-box input {
-            padding: 10px;
-            margin: 5px;
-            width: 200px;
-        }
-        .search-box button {
-            padding: 10px 20px;
-            background-color: orange;
-            border: none;
-            color: white;
-            cursor: pointer;
-        }
-
-        /* Giới thiệu */
-        .info-box {
-            background-color: white;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-            margin-bottom: 20px;
-        }
-
-        /* Thư viện ảnh */
-        .gallery {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-        .gallery-item {
-            width: 150px;
-            height: 150px;
-            margin: 10px;
-            background-color: white;
-            border-radius: 10px;
-            overflow: hidden;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-        .gallery-item img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-
-        /* CTA */
-        .cta {
-            background-color: orange;
-            color: white;
-            padding: 20px;
-            font-size: 20px;
-            font-weight: bold;
-        }
-        .cta button {
-            background-color: white;
-            color: orange;
-            padding: 10px 20px;
-            border: none;
-            font-size: 18px;
-            font-weight: bold;
-            cursor: pointer;
-        }
-    </style>
+    <title>FotoGo - Đặt lịch chụp ảnh</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
     <!-- Banner -->
-    <div class="banner"></div>
+    <header class="banner">
+        <img src="banner.jpg" alt="FotoGo - Photo Perfect, On the Go!">
+    </header>
 
     <!-- Logo -->
-    <img src="logo.jpg" alt="FotoGo Logo" class="logo">
-
-    <!-- Tìm kiếm Photographer & Concept -->
-    <div class="search-box">
-        <h2>Tìm kiếm Photographer & Concept</h2>
-        <input type="text" placeholder="Tìm nhiếp ảnh gia...">
-        <input type="text" placeholder="Tìm concept chụp ảnh...">
-        <button>Tìm kiếm</button>
+    <div class="logo-container">
+        <img src="logo.jpg" alt="FotoGo Logo" class="logo">
     </div>
 
-    <!-- Giới thiệu FotoGo -->
-    <div class="container">
-        <div class="info-box">
-            <h2>FotoGo là gì?</h2>
-            <p>FotoGo là dịch vụ kết nối bạn với các nhiếp ảnh gia chuyên nghiệp, giúp bạn dễ dàng tìm kiếm và đặt lịch chụp ảnh một cách nhanh chóng.  
-            Dù là sự kiện quan trọng, ảnh cưới, ảnh nghệ thuật hay đơn giản là một buổi chụp ảnh kỷ niệm, FotoGo sẽ giúp bạn có được những bức ảnh đẹp nhất một cách dễ dàng.</p>
+    <!-- Tìm kiếm Photographer & Concept -->
+    <section class="search-section">
+        <h2>Tìm kiếm Photographer & Concept</h2>
+        <div class="search-box">
+            <input type="text" placeholder="Tìm nhiếp ảnh gia...">
+            <input type="text" placeholder="Tìm concept chụp ảnh...">
+            <button>Tìm kiếm</button>
         </div>
+    </section>
 
-        <!-- Thư viện ảnh -->
+    <!-- Giới thiệu FotoGo -->
+    <section class="about">
+        <h2>FotoGo là gì?</h2>
+        <p>FotoGo là dịch vụ kết nối bạn với các nhiếp ảnh gia chuyên nghiệp, giúp bạn dễ dàng tìm kiếm và đặt lịch chụp ảnh một cách nhanh chóng. Dù là sự kiện quan trọng, ảnh cưới, ảnh nghệ thuật, hay đơn giản là một buổi chụp ảnh kỷ niệm, FotoGo sẽ giúp bạn có được những bức ảnh đẹp nhất một cách dễ dàng.</p>
+    </section>
+
+    <!-- Thư viện ảnh -->
+    <section class="gallery">
         <h2>Thư viện ảnh</h2>
-        <div class="gallery">
+        <div class="grid-container">
+            <!-- 49 ảnh -->
             <script>
                 for (let i = 1; i <= 49; i++) {
-                    document.write(`<div class="gallery-item"><img src="photo${i}.jpg" alt="Ảnh ${i}"></div>`);
+                    document.write(`<div class="gallery-item"><img src="photo${i}.jpg" alt="Ảnh ${i}"><p>Ảnh ${i}</p></div>`);
                 }
             </script>
         </div>
-    </div>
+    </section>
 
-    <!-- Nút đặt lịch -->
-    <div class="cta">
-        Đặt lịch chụp ảnh
-        <br>
-        <button>Đặt Lịch Ngay</button>
-    </div>
-
+    <!-- Đặt lịch chụp ảnh -->
+    <section class="booking">
+        <h2>Đặt lịch chụp ảnh</h2>
+        <button class="book-now">Đặt Lịch Ngay</button>
+    </section>
 </body>
 </html>
