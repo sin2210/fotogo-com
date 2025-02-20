@@ -3,137 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FotoGo - Dịch vụ đặt lịch chụp ảnh</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            text-align: center;
-            background-color: #f5f5f5;
-        }
-        .container {
-            width: 80%;
-            margin: auto;
-            background: white;
-            padding: 20px;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-            border-radius: 10px;
-        }
-        h1 {
-            color: #333;
-        }
-        p {
-            font-size: 18px;
-            color: #555;
-        }
-        .btn {
-            display: inline-block;
-            padding: 10px 20px;
-            background-color: #ff6600;
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-            font-weight: bold;
-        }
-        .btn:hover {
-            background-color: #cc5200;
-        }
-        .gallery {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-            gap: 10px;
-            padding: 20px;
-        }
-        .gallery img {
-            width: 100%;
-            border-radius: 10px;
-            transition: transform 0.3s ease;
-        }
-        .gallery img:hover {
-            transform: scale(1.05);
-        }
-        .contact-form {
-            margin-top: 20px;
-        }
-        .contact-form input, .contact-form textarea {
-            width: 90%;
-            padding: 10px;
-            margin: 5px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-        }
-        .contact-form button {
-            padding: 10px 20px;
-            background-color: #28a745;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-        .contact-form button:hover {
-            background-color: #218838;
-        }
-        footer {
-            margin-top: 20px;
-            padding: 10px;
-            background: #333;
-            color: white;
-            text-align: center;
-        }
-    </style>
+    <title>FotoGo - Dịch vụ chụp ảnh chuyên nghiệp</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-<div class="container">
-    <img src="logo.png" alt="FotoGo Logo" width="150">
-    <h1>FotoGo</h1>
-    <p><i>Photo Perfect, On the Go!</i></p>
-    <img src="banner.png" alt="FotoGo Banner" width="100%">
+    <header>
+        <img src="images/logo.png" alt="FotoGo Logo" class="logo">
+        <h1>FotoGo</h1>
+        <p>Photo Perfect, On the Go!</p>
+    </header>
 
-    <h2>FotoGo là gì?</h2>
-    <p>FotoGo là dịch vụ kết nối bạn với các nhiếp ảnh gia chuyên nghiệp, giúp bạn dễ dàng tìm kiếm và đặt lịch chụp ảnh một cách nhanh chóng.  
-       Dù là sự kiện quan trọng, ảnh cưới, ảnh nghệ thuật, hay đơn giản chỉ là một buổi chụp ảnh kỷ niệm, FotoGo sẽ giúp bạn có được những bức ảnh đẹp nhất một cách dễ dàng.</p>
+    <nav>
+        <ul>
+            <li><a href="#about">Giới thiệu</a></li>
+            <li><a href="#gallery">Thư viện ảnh</a></li>
+            <li><a href="#booking">Đặt lịch</a></li>
+            <li><a href="#contact">Liên hệ</a></li>
+        </ul>
+    </nav>
 
-    <h2>Đặt lịch chụp ảnh</h2>
-    <a href="#" class="btn">Đặt Lịch Ngay</a>
+    <section id="search">
+        <h2>Tìm kiếm Photographer & Concept</h2>
+        <div class="search-container">
+            <input type="text" id="photographer-search" placeholder="Tìm nhiếp ảnh gia...">
+            <input type="text" id="concept-search" placeholder="Tìm concept chụp ảnh...">
+            <button>Tìm kiếm</button>
+        </div>
+    </section>
 
-    <h2>Bộ sưu tập ảnh</h2>
-    <div class="gallery">
-        <img src="photo1.jpg" alt="Ảnh 1">
-        <img src="photo2.jpg" alt="Ảnh 2">
-        <img src="photo3.jpg" alt="Ảnh 3">
-        <img src="photo4.jpg" alt="Ảnh 4">
-        <img src="photo5.jpg" alt="Ảnh 5">
-        <img src="photo6.jpg" alt="Ảnh 6">
-        <img src="photo7.jpg" alt="Ảnh 7">
-        <img src="photo8.jpg" alt="Ảnh 8">
-        <img src="photo9.jpg" alt="Ảnh 9">
-        <img src="photo10.jpg" alt="Ảnh 10">
-        <img src="photo11.jpg" alt="Ảnh 11">
-        <img src="photo12.jpg" alt="Ảnh 12">
-        <img src="photo13.jpg" alt="Ảnh 13">
-        <img src="photo14.jpg" alt="Ảnh 14">
-        <img src="photo15.jpg" alt="Ảnh 15">
-        <img src="photo16.jpg" alt="Ảnh 16">
-        <img src="photo17.jpg" alt="Ảnh 17">
-        <img src="photo18.jpg" alt="Ảnh 18">
-        <img src="photo19.jpg" alt="Ảnh 19">
-        <img src="photo20.jpg" alt="Ảnh 20">
-    </div>
+    <section id="about">
+        <h2>FotoGo là gì?</h2>
+        <p>
+            FotoGo là dịch vụ kết nối bạn với các nhiếp ảnh gia chuyên nghiệp, giúp bạn dễ dàng tìm kiếm và đặt lịch chụp ảnh một cách nhanh chóng. 
+            Dù là sự kiện quan trọng, ảnh cưới, ảnh nghệ thuật, hay chỉ đơn giản là một buổi chụp ảnh kỷ niệm, 
+            FotoGo sẽ giúp bạn có được những bức ảnh đẹp nhất một cách dễ dàng.
+        </p>
+    </section>
 
-    <h2>Liên hệ</h2>
-    <div class="contact-form">
-        <input type="text" placeholder="Tên của bạn">
-        <input type="email" placeholder="Email của bạn">
-        <textarea placeholder="Tin nhắn"></textarea>
-        <button>Gửi</button>
-    </div>
-</div>
+    <section id="gallery">
+        <h2>Thư viện ảnh</h2>
+        <div class="gallery-grid">
+            <!-- 49 ảnh -->
+            <script>
+                for (let i = 1; i <= 49; i++) {
+                    document.write(`<div class="gallery-item"><img src="images/photo${i}.jpg" alt="Ảnh ${i}"></div>`);
+                }
+            </script>
+        </div>
+    </section>
 
-<footer>
-    © 2025 FotoGo. All rights reserved.
-</footer>
+    <section id="booking">
+        <h2>Đặt lịch chụp ảnh</h2>
+        <button class="book-now">Đặt Lịch Ngay</button>
+    </section>
 
-</body>
-</html>
+    <section id="contact">
+        <h2>Liên hệ</h2>
+        <form>
+            <input type="text" placeholder="Tên của bạn">
+            <input type="email" placeholder="Email của bạn">
+            <textarea placeholder="Tin nhắn"></textarea>
+            <button type="submit">Gửi</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 202
