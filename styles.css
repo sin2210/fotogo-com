@@ -61,7 +61,7 @@ body {
 }
 .gallery img {
     width: 100%;
-    height: auto;
+    aspect-ratio: 3/4; /* Tất cả ảnh có cùng tỷ lệ 3:4 */
     object-fit: cover;
     border-radius: 0; /* Không bo góc */
     border: 2px solid #2d4f2d; /* Viền xanh lá */
