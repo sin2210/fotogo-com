@@ -3,51 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FotoGo - Photo Perfect, On the Go!</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>FotoGo - Đặt Lịch Chụp Ảnh Dễ Dàng</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+        }
+        h1 {
+            color: #333;
+        }
+        .btn {
+            display: inline-block;
+            padding: 10px 15px;
+            background-color: #007bff;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 10px;
+        }
+        .gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            margin: 5px 0;
+            padding: 8px;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <img src="logo.png" alt="FotoGo Logo" class="logo">
-        <h1>FotoGo</h1>
-        <p>Photo Perfect, On the Go!</p>
-    </header>
-    
-    <section class="hero">
-        <img src="banner.png" alt="FotoGo Banner" class="banner">
-    </section>
-    
-    <section class="intro">
-        <h2>Photophone là gì?</h2>
-        <p>FotoGo là dịch vụ giúp bạn dễ dàng tìm kiếm và đặt lịch chụp ảnh chuyên nghiệp với điện thoại. Chỉ cần vài cú nhấp chuột, bạn sẽ có ngay những bức ảnh đẹp mọi lúc, mọi nơi.</p>
-    </section>
-    
-    <section class="booking">
-        <h2>Đặt lịch chụp ảnh</h2>
-        <button>Đặt Lịch Ngay</button>
-    </section>
-    
-    <section class="gallery">
-        <h2>Bộ sưu tập ảnh</h2>
-        <div class="gallery-grid">
-            <img src="photo1.jpg" alt="Ảnh 1">
-            <img src="photo2.jpg" alt="Ảnh 2">
-            <img src="photo3.jpg" alt="Ảnh 3">
-        </div>
-    </section>
-    
-    <section class="contact">
-        <h2>Liên hệ</h2>
-        <form>
-            <input type="text" placeholder="Tên của bạn">
-            <input type="email" placeholder="Email của bạn">
-            <textarea placeholder="Tin nhắn"></textarea>
-            <button type="submit">Gửi</button>
-        </form>
-    </section>
-    
-    <footer>
-        <p>&copy; 2025 FotoGo. All rights reserved.</p>
-    </footer>
+
+    <!-- Logo -->
+    <img src="logo.png" alt="FotoGo Logo" width="150">
+
+    <h1>FotoGo</h1>
+    <p><i>Photo Perfect, On the Go!</i></p>
+
+    <!-- Banner -->
+    <img src="banner.png" alt="FotoGo Banner" width="100%">
+
+    <h2>Photophone là gì?</h2>
+    <p>FotoGo là dịch vụ giúp bạn dễ dàng tìm kiếm và đặt lịch chụp ảnh chuyên nghiệp với điện thoại.</p>
+
+    <h2>Đặt lịch chụp ảnh</h2>
+    <a href="#" class="btn">Đặt Lịch Ngay</a>
+
+    <h2>Bộ sưu tập ảnh</h2>
+    <div class="gallery">
+        <img src="photo1.jpg" alt="Ảnh 1">
+        <img src="photo2.jpg" alt="Ảnh 2">
+        <img src="photo3.jpg" alt="Ảnh 3">
+        <img src="photo4.jpg" alt="Ảnh 4">
+        <img src="photo5.jpg" alt="Ảnh 5">
+        <img src="photo6.jpg" alt="Ảnh 6">
+        <img src="photo7.jpg" alt="Ảnh 7">
+        <img src="photo8.jpg" alt="Ảnh 8">
+        <img src="photo9.jpg" alt="Ảnh 9">
+        <img src="photo10.jpg" alt="Ảnh 10">
+    </div>
+
+    <h2>Liên hệ</h2>
+    <form class="contact-form">
+        <input type="text" placeholder="Tên của bạn">
+        <input type="email" placeholder="Email của bạn">
+        <textarea placeholder="Tin nhắn"></textarea>
+        <button type="submit">Gửi</button>
+    </form>
+
+    <p>&copy; 2025 FotoGo. All rights reserved.</p>
+
 </body>
 </html>
