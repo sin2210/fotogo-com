@@ -1,6 +1,6 @@
 /* Màu chủ đạo theo logo */
 :root {
-    --primary-color: #4A5D53; /* Màu giống logo */
+    --primary-color: #4A5D53; /* Xanh lá giống logo */
     --secondary-color: #E88E3A;
     --background-color: #F4F4F4;
 }
@@ -15,10 +15,19 @@ body {
 }
 
 /* Banner */
+.banner {
+    width: 100%;
+    height: 100vh; /* Hiển thị vừa đủ màn hình */
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .banner img {
     width: 100%;
     height: auto;
-    object-fit: cover;
+    max-height: 100vh; /* Đảm bảo không bị che chữ */
 }
 
 /* Logo */
@@ -47,17 +56,18 @@ body {
 .search-box input {
     padding: 10px;
     width: 200px;
-    border: none;
+    border: 2px solid var(--primary-color);
     border-radius: 5px;
 }
 
-.search-box button {
-    background: var(--secondary-color);
+.search-box .btn-green {
+    background: var(--primary-color);
     color: white;
-    border: none;
+    border: 2px solid var(--primary-color);
     padding: 10px 20px;
     cursor: pointer;
     border-radius: 5px;
+    font-weight: bold;
 }
 
 /* Giới thiệu */
@@ -97,6 +107,7 @@ body {
     padding: 10px;
     border-radius: 5px;
     text-align: center;
+    border: 2px solid var(--primary-color); /* Viền màu xanh lá */
 }
 
 .gallery-item img {
@@ -112,13 +123,12 @@ body {
     padding: 30px 0;
 }
 
-.book-now {
-    background: white;
-    color: var(--secondary-color);
-    border: none;
+.btn-green {
+    background: var(--primary-color);
+    color: white;
+    border: 2px solid var(--primary-color);
     padding: 15px 30px;
     font-size: 16px;
     font-weight: bold;
     cursor: pointer;
-    border-radius: 5px;
-}
+  
