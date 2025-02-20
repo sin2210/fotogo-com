@@ -1,114 +1,124 @@
+/* Màu chủ đạo theo logo */
+:root {
+    --primary-color: #4A5D53; /* Màu giống logo */
+    --secondary-color: #E88E3A;
+    --background-color: #F4F4F4;
+}
+
+/* Reset CSS */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f8f8f8;
+    background-color: var(--background-color);
     text-align: center;
 }
 
-header {
-    background-color: #ff6600;
-    color: white;
-    padding: 20px;
+/* Banner */
+.banner img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* Logo */
+.logo-container {
+    margin: 20px 0;
 }
 
 .logo {
-    max-width: 100px;
+    width: 150px;
 }
 
-nav ul {
-    list-style: none;
-    padding: 0;
-    background: #333;
+/* Tìm kiếm Photographer & Concept */
+.search-section {
+    background: var(--primary-color);
+    color: white;
+    padding: 20px 0;
+}
+
+.search-box {
     display: flex;
     justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
 }
 
-nav ul li {
-    margin: 0 15px;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-#search {
-    padding: 20px;
-    background: #eee;
-}
-
-.search-container input {
+.search-box input {
     padding: 10px;
-    margin: 5px;
-    border: 1px solid #ccc;
+    width: 200px;
+    border: none;
     border-radius: 5px;
 }
 
-button {
-    padding: 10px 15px;
-    background: #ff6600;
+.search-box button {
+    background: var(--secondary-color);
     color: white;
     border: none;
+    padding: 10px 20px;
     cursor: pointer;
+    border-radius: 5px;
 }
 
-#about {
-    padding: 20px;
+/* Giới thiệu */
+.about {
     background: white;
-    margin: 20px;
+    padding: 30px;
+    margin: 20px auto;
+    width: 80%;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-#gallery {
-    padding: 20px;
+.about h2 {
+    color: var(--primary-color);
 }
 
-.gallery-grid {
+/* Thư viện ảnh */
+.gallery {
+    padding: 30px;
+}
+
+.gallery h2 {
+    color: var(--primary-color);
+}
+
+.grid-container {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-    gap: 10px;
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    gap: 15px;
+    justify-content: center;
+    max-width: 90%;
+    margin: auto;
+}
+
+.gallery-item {
+    background: white;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
 }
 
 .gallery-item img {
     width: 100%;
+    height: auto;
     border-radius: 5px;
 }
 
-#booking {
-    padding: 20px;
-    background: #ff6600;
+/* Đặt lịch chụp ảnh */
+.booking {
+    background: var(--secondary-color);
     color: white;
+    padding: 30px 0;
 }
 
 .book-now {
     background: white;
-    color: #ff6600;
-    font-weight: bold;
-    padding: 15px 25px;
-    border-radius: 5px;
+    color: var(--secondary-color);
     border: none;
+    padding: 15px 30px;
+    font-size: 16px;
+    font-weight: bold;
     cursor: pointer;
-}
-
-#contact {
-    padding: 20px;
-    background: white;
-}
-
-form input, form textarea {
-    display: block;
-    width: 80%;
-    margin: 10px auto;
-    padding: 10px;
-    border: 1px solid #ccc;
     border-radius: 5px;
-}
-
-footer {
-    padding: 10px;
-    background: #333;
-    color: white;
 }
