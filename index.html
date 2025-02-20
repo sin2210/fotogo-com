@@ -3,54 +3,97 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FotoGo - Đặt Lịch Chụp Ảnh Dễ Dàng</title>
+    <title>FotoGo - Dịch vụ đặt lịch chụp ảnh</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            margin: 20px;
-            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            background-color: #f5f5f5;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
         }
         h1 {
             color: #333;
         }
+        p {
+            font-size: 18px;
+            color: #555;
+        }
         .btn {
             display: inline-block;
-            padding: 10px 15px;
-            background-color: #007bff;
-            color: #fff;
+            padding: 10px 20px;
+            background-color: #ff6600;
+            color: white;
             text-decoration: none;
             border-radius: 5px;
+            font-weight: bold;
+        }
+        .btn:hover {
+            background-color: #cc5200;
         }
         .gallery {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
             gap: 10px;
+            padding: 20px;
         }
         .gallery img {
             width: 100%;
-            height: auto;
-            border-radius: 8px;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+        .contact-form {
+            margin-top: 20px;
         }
         .contact-form input, .contact-form textarea {
-            width: 100%;
-            margin: 5px 0;
-            padding: 8px;
+            width: 90%;
+            padding: 10px;
+            margin: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .contact-form button {
+            padding: 10px 20px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .contact-form button:hover {
+            background-color: #218838;
+        }
+        footer {
+            margin-top: 20px;
+            padding: 10px;
+            background: #333;
+            color: white;
+            text-align: center;
         }
     </style>
 </head>
 <body>
 
-    <!-- Logo -->
+<div class="container">
     <img src="logo.png" alt="FotoGo Logo" width="150">
-
     <h1>FotoGo</h1>
     <p><i>Photo Perfect, On the Go!</i></p>
-
-    <!-- Banner -->
     <img src="banner.png" alt="FotoGo Banner" width="100%">
 
-    <h2>Photophone là gì?</h2>
-    <p>FotoGo là dịch vụ giúp bạn dễ dàng tìm kiếm và đặt lịch chụp ảnh chuyên nghiệp với điện thoại.</p>
+    <h2>FotoGo là gì?</h2>
+    <p>FotoGo là dịch vụ kết nối bạn với các nhiếp ảnh gia chuyên nghiệp, giúp bạn dễ dàng tìm kiếm và đặt lịch chụp ảnh một cách nhanh chóng.  
+       Dù là **sự kiện quan trọng**, **ảnh cưới**, **ảnh nghệ thuật**, hay đơn giản chỉ là một buổi chụp ảnh kỷ niệm, FotoGo sẽ giúp bạn có được những bức ảnh đẹp nhất một cách dễ dàng.</p>
 
     <h2>Đặt lịch chụp ảnh</h2>
     <a href="#" class="btn">Đặt Lịch Ngay</a>
@@ -67,17 +110,30 @@
         <img src="photo8.jpg" alt="Ảnh 8">
         <img src="photo9.jpg" alt="Ảnh 9">
         <img src="photo10.jpg" alt="Ảnh 10">
+        <img src="photo11.jpg" alt="Ảnh 11">
+        <img src="photo12.jpg" alt="Ảnh 12">
+        <img src="photo13.jpg" alt="Ảnh 13">
+        <img src="photo14.jpg" alt="Ảnh 14">
+        <img src="photo15.jpg" alt="Ảnh 15">
+        <img src="photo16.jpg" alt="Ảnh 16">
+        <img src="photo17.jpg" alt="Ảnh 17">
+        <img src="photo18.jpg" alt="Ảnh 18">
+        <img src="photo19.jpg" alt="Ảnh 19">
+        <img src="photo20.jpg" alt="Ảnh 20">
     </div>
 
     <h2>Liên hệ</h2>
-    <form class="contact-form">
+    <div class="contact-form">
         <input type="text" placeholder="Tên của bạn">
         <input type="email" placeholder="Email của bạn">
         <textarea placeholder="Tin nhắn"></textarea>
-        <button type="submit">Gửi</button>
-    </form>
+        <button>Gửi</button>
+    </div>
+</div>
 
-    <p>&copy; 2025 FotoGo. All rights reserved.</p>
+<footer>
+    © 2025 FotoGo. All rights reserved.
+</footer>
 
 </body>
 </html>
