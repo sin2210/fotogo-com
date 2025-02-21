@@ -3,85 +3,95 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FotoGo - Đặt lịch chụp ảnh</title>
+    <title>FotoGo - Photo Perfect, On the Go!</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Banner -->
-    <header class="banner">
-        <img src="banner.jpg" alt="FotoGo Banner">
+    <header>
+        <img src="logo.jpg" alt="FotoGo Logo" class="logo">
+        <h1>FotoGo</h1>
+        <p>Photo Perfect, On the Go!</p>
     </header>
+    
+    <section class="hero">
+        <img src="banner.jpg" alt="FotoGo Banner" class="banner">
+    </section>
 
-    <!-- Logo -->
-    <div class="logo-container">
-        <img src="logo.jpg" alt="FotoGo Logo">
-    </div>
+    <section class="intro">
+        <h2>FotoGo là gì?</h2>
+        <p>FotoGo là dịch vụ giúp bạn dễ dàng tìm kiếm và đặt lịch chụp ảnh chuyên nghiệp bằng điện thoại hoặc máy ảnh. Chỉ cần vài cú nhấp chuột, bạn có thể kết nối với nhiếp ảnh gia phù hợp để có những bức ảnh ưng ý nhất.</p>
+    </section>
 
-    <!-- Tìm kiếm Photographer & Concept -->
-    <div class="search-container">
-        <h2>Tìm kiếm Photographer & Concept</h2>
-        <input type="text" placeholder="Tìm nhiếp ảnh gia...">
-        <input type="text" placeholder="Tìm concept chụp ảnh...">
-        <button class="search-btn">Tìm kiếm</button>
-    </div>
+    <section id="booking">
+        <h2>Đặt lịch chụp ảnh</h2>
+        <p>Chọn nhiếp ảnh gia, concept yêu thích và đặt lịch ngay!</p>
 
-    <!-- Thư viện ảnh -->
-    <div class="gallery">
-         <!-- 49 ảnh, không hiển thị chữ tên ảnh -->
-    <img src="photo1.jpg" alt="Ảnh">
-    <img src="photo2.jpg" alt="Ảnh">
-    <img src="photo3.jpg" alt="Ảnh">
-    <img src="photo4.jpg" alt="Ảnh">
-    <img src="photo5.jpg" alt="Ảnh">
-    <img src="photo6.jpg" alt="Ảnh">
-    <img src="photo7.jpg" alt="Ảnh">
-    <img src="photo8.jpg" alt="Ảnh">
-    <img src="photo9.jpg" alt="Ảnh">
-    <img src="photo10.jpg" alt="Ảnh">
-    <img src="photo11.jpg" alt="Ảnh">
-    <img src="photo12.jpg" alt="Ảnh">
-    <img src="photo13.jpg" alt="Ảnh">
-    <img src="photo14.jpg" alt="Ảnh">
-    <img src="photo15.jpg" alt="Ảnh">
-    <img src="photo16.jpg" alt="Ảnh">
-    <img src="photo17.jpg" alt="Ảnh">
-    <img src="photo18.jpg" alt="Ảnh">
-    <img src="photo19.jpg" alt="Ảnh">
-    <img src="photo20.jpg" alt="Ảnh">
-    <img src="photo21.jpg" alt="Ảnh">
-    <img src="photo22.jpg" alt="Ảnh">
-    <img src="photo23.jpg" alt="Ảnh">
-    <img src="photo24.jpg" alt="Ảnh">
-    <img src="photo25.jpg" alt="Ảnh">
-    <img src="photo26.jpg" alt="Ảnh">
-    <img src="photo27.jpg" alt="Ảnh">
-    <img src="photo28.jpg" alt="Ảnh">
-    <img src="photo29.jpg" alt="Ảnh">
-    <img src="photo30.jpg" alt="Ảnh">
-    <img src="photo31.jpg" alt="Ảnh">
-    <img src="photo32.jpg" alt="Ảnh">
-    <img src="photo33.jpg" alt="Ảnh">
-    <img src="photo34.jpg" alt="Ảnh">
-    <img src="photo35.jpg" alt="Ảnh">
-    <img src="photo36.jpg" alt="Ảnh">
-    <img src="photo37.jpg" alt="Ảnh">
-    <img src="photo38.jpg" alt="Ảnh">
-    <img src="photo39.jpg" alt="Ảnh">
-    <img src="photo40.jpg" alt="Ảnh">
-    <img src="photo41.jpg" alt="Ảnh">
-    <img src="photo42.jpg" alt="Ảnh">
-    <img src="photo43.jpg" alt="Ảnh">
-    <img src="photo44.jpg" alt="Ảnh">
-    <img src="photo45.jpg" alt="Ảnh">
-    <img src="photo46.jpg" alt="Ảnh">
-    <img src="photo47.jpg" alt="Ảnh">
-    <img src="photo48.jpg" alt="Ảnh">
-    <img src="photo49.jpg" alt="Ảnh">
-    </div>
+        <form action="submit_booking.php" method="POST">
+            <label for="photographer">Chọn nhiếp ảnh gia:</label>
+            <select id="photographer" name="photographer" required>
+                <option value="nguyenvanthanh">Nguyễn Văn Thành</option>
+                <option value="tranvukien">Trần Vũ Kiên</option>
+                <option value="lethithanhnhi">Lê Thị Thanh Nhi</option>
+                <option value="phamvanhoainam">Phạm Văn Hoài Nam</option>
+                <option value="dangthithuphuong">Đặng Thị Thu Phương</option>
+                <option value="vuquangminh">Vũ Quang Minh</option>
+                <option value="nguyenminhtrong">Nguyễn Minh Trọng</option>
+                <option value="tranthanhha">Trần Thanh Hà</option>
+                <option value="lequochuy">Lê Quốc Huy</option>
+                <option value="hoangduykhuong">Hoàng Duy Khương</option>
+                <option value="phanthuha">Phan Thu Hà</option>
+            </select>
 
-    <!-- Nút đặt lịch -->
-    <div class="booking">
-        <button class="booking-btn">Đặt lịch ngay</button>
-    </div>
+            <label for="concept">Chọn concept chụp ảnh:</label>
+            <select id="concept" name="concept" required>
+                <option value="ngoại cảnh">Ngoại cảnh</option>
+                <option value="studio">Studio</option>
+                <option value="sự kiện">Sự kiện</option>
+                <option value="chụp sản phẩm">Chụp sản phẩm</option>
+            </select>
+
+            <label for="price">Chọn mức giá:</label>
+            <select id="price" name="price">
+                <option value="500k">Dưới 500K</option>
+                <option value="1tr">500K - 1 triệu</option>
+                <option value="2tr">1 triệu - 2 triệu</option>
+                <option value="3tr+">Trên 2 triệu</option>
+            </select>
+
+            <label for="date">Chọn ngày chụp:</label>
+            <input type="date" id="date" name="date" required>
+
+            <label for="message">Ghi chú:</label>
+            <textarea id="message" name="message" placeholder="Ví dụ: Địa điểm chụp, yêu cầu đặc biệt..."></textarea>
+
+            <button type="submit">Xác nhận đặt lịch</button>
+        </form>
+    </section>
+
+    <section class="gallery">
+        <h2>Bộ sưu tập ảnh</h2>
+        <div class="gallery-grid">
+            <!-- 49 ảnh -->
+            <script>
+                for (let i = 1; i <= 49; i++) {
+                    document.write(`<img src="photo${i}.jpg" alt="Ảnh ${i}">`);
+                }
+            </script>
+        </div>
+    </section>
+
+    <section class="contact">
+        <h2>Liên hệ</h2>
+        <form>
+            <input type="text" placeholder="Tên của bạn">
+            <input type="email" placeholder="Email của bạn">
+            <textarea placeholder="Tin nhắn"></textarea>
+            <button type="submit">Gửi</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 FotoGo. All rights reserved.</p>
+    </footer>
 </body>
 </html>
