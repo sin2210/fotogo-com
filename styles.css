@@ -3,7 +3,8 @@ body {
     margin: 0;
     padding: 0;
     text-align: center;
-    background-color: #F5F5F5;
+    background-color: #3F5643; /* Màu xanh giống logo */
+    color: white;
 }
 
 /* Banner */
@@ -27,7 +28,7 @@ body {
 
 /* Giới thiệu */
 .about {
-    background-color: #4CAF50;
+    background-color: #4E6A57; /* Màu xanh nhạt hơn để làm nổi chữ */
     color: white;
     padding: 20px;
     margin: 20px;
@@ -37,6 +38,7 @@ body {
 /* Đặt lịch */
 .booking {
     background-color: white;
+    color: black;
     padding: 20px;
     border-radius: 10px;
     margin: 20px auto;
@@ -45,7 +47,7 @@ body {
 }
 
 .booking h2 {
-    color: #4CAF50;
+    color: #3F5643;
 }
 
 .booking label {
@@ -64,7 +66,7 @@ body {
 }
 
 .booking button {
-    background-color: #4CAF50;
+    background-color: #3F5643;
     color: white;
     border: none;
     padding: 10px 20px;
@@ -73,7 +75,7 @@ body {
 }
 
 .booking button:hover {
-    background-color: #45a049;
+    background-color: #2F4433;
 }
 
 /* Thư viện ảnh */
@@ -82,7 +84,7 @@ body {
 }
 
 .gallery h2 {
-    color: #4CAF50;
+    color: #EDEDED;
 }
 
 .photo-grid {
@@ -98,4 +100,17 @@ body {
     aspect-ratio: 3 / 4;
     object-fit: cover;
     border-radius: 5px;
+}
+
+/* Phần liên hệ */
+.contact {
+    background-color: #2F4433;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.contact p {
+    margin: 5px 0;
 }
