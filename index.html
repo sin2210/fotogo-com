@@ -3,81 +3,84 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FotoGo - Đặt lịch chụp ảnh</title>
+    <title>FotoGo - Đặt Lịch Chụp Ảnh</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
     <!-- Banner -->
-    <header class="banner">
-        <img src="banner.jpg" alt="Banner FotoGo">
+    <header>
+        <img src="banner.jpg" alt="FotoGo Banner" class="banner">
     </header>
 
     <!-- Logo -->
     <div class="logo-container">
-        <img src="logo.jpg" alt="FotoGo Logo">
+        <img src="logo.jpg" alt="FotoGo Logo" class="logo">
     </div>
 
     <!-- Giới thiệu -->
-    <section class="intro">
-        <h1>Chào mừng đến với FotoGo!</h1>
-        <p>FotoGo là nền tảng kết nối bạn với những nhiếp ảnh gia chuyên nghiệp, giúp bạn dễ dàng đặt lịch chụp ảnh chỉ với vài thao tác trên điện thoại hoặc máy tính.  
-        Dù là ảnh cá nhân, cặp đôi, gia đình hay sự kiện, FotoGo sẽ giúp bạn lưu giữ khoảnh khắc một cách hoàn hảo!</p>
+    <section class="about">
+        <h1>FotoGo - Dịch vụ tìm thợ chụp ảnh chuyên nghiệp</h1>
+        <p>FotoGo giúp bạn dễ dàng kết nối với các nhiếp ảnh gia chuyên nghiệp để ghi lại những khoảnh khắc đẹp nhất. Chỉ với vài bước đơn giản, bạn có thể đặt lịch chụp ảnh nhanh chóng, tiện lợi và phù hợp với nhu cầu của mình.</p>
     </section>
 
     <!-- Form đặt lịch -->
-    <section class="booking-section">
+    <section class="booking">
         <h2>Đặt Lịch Chụp Ảnh</h2>
-        <form action="#" method="POST">
+        <form>
             <label for="photographer">Chọn Photographer:</label>
             <select id="photographer" name="photographer">
-                <option value="nguyen-viet">Nguyễn Việt</option>
-                <option value="tran-hai">Trần Hải</option>
-                <option value="le-minh">Lê Minh</option>
-                <option value="pham-huong">Phạm Hương</option>
-                <option value="doan-phat">Đoàn Phát</option>
-                <option value="hoang-linh">Hoàng Linh</option>
-                <option value="ngoc-thao">Ngọc Thảo</option>
-                <option value="quang-huy">Quang Huy</option>
-                <option value="bao-ngoc">Bảo Ngọc</option>
-                <option value="duc-anh">Đức Anh</option>
+                <option value="nguyenanbinh">Nguyễn An Bình</option>
+                <option value="tranthithanhbinh">Trần Thị Thanh Bình</option>
+                <option value="leanhthu">Lê Anh Thư</option>
+                <option value="phamminhhoang">Phạm Minh Hoàng</option>
+                <option value="dothanhdat">Đỗ Thành Đạt</option>
+                <option value="vuxuanminh">Vũ Xuân Minh</option>
+                <option value="truongthingoclan">Trương Thị Ngọc Lan</option>
+                <option value="nguyenvanhoangphuc">Nguyễn Văn Hoàng Phúc</option>
+                <option value="buiconghieu">Bùi Công Hiếu</option>
+                <option value="lethingocthanh">Lê Thị Ngọc Thanh</option>
             </select>
 
             <label for="concept">Chọn Concept:</label>
             <select id="concept" name="concept">
-                <option value="ngoai-troi">Ngoại Trời</option>
+                <option value="nature">Ngoại Cảnh</option>
                 <option value="studio">Studio</option>
-                <option value="hoai-co">Hoài Cổ</option>
-                <option value="thoi-trang">Thời Trang</option>
-                <option value="tinh-yeu">Tình Yêu</option>
-                <option value="doanh-nhan">Doanh Nhân</option>
-                <option value="da-ngoai">Dã Ngoại</option>
+                <option value="couple">Couple</option>
+                <option value="wedding">Wedding</option>
+                <option value="portrait">Chân Dung</option>
+                <option value="family">Gia Đình</option>
+                <option value="event">Sự Kiện</option>
+                <option value="product">Sản Phẩm</option>
             </select>
 
             <label for="date">Chọn Ngày:</label>
-            <input type="date" id="date" name="date" required>
+            <input type="date" id="date" name="date">
 
-            <label for="price">Giá Tiền:</label>
-            <select id="price" name="price">
-                <option value="500k">500.000 VNĐ</option>
-                <option value="1m">1.000.000 VNĐ</option>
-                <option value="1.5m">1.500.000 VNĐ</option>
-                <option value="2m">2.000.000 VNĐ</option>
+            <label for="price">Giá Cả (VNĐ):</label>
+            <input type="number" id="price" name="price" placeholder="Nhập ngân sách của bạn">
+
+            <label for="device">Chọn Thiết Bị:</label>
+            <select id="device" name="device">
+                <option value="phone">Chụp bằng điện thoại</option>
+                <option value="camera">Chụp bằng máy ảnh</option>
+                <option value="both">Cả hai</option>
             </select>
 
             <button type="submit">Đặt Lịch</button>
         </form>
     </section>
 
-    <!-- Gallery -->
+    <!-- Thư viện ảnh -->
     <section class="gallery">
-        <!-- Thêm 49 ảnh vào đây -->
-        <script>
-            for (let i = 1; i <= 49; i++) {
-                document.write(`<div class="gallery-item"><img src="photo${i}.jpg" alt="Ảnh ${i}"></div>`);
-            }
-        </script>
+        <h2>Bộ Sưu Tập</h2>
+        <div class="photo-grid">
+            <!-- Thêm 49 ảnh vào đây -->
+            <script>
+                for (let i = 1; i <= 49; i++) {
+                    document.write(`<img src="photo${i}.jpg" alt="Ảnh ${i}">`);
+                }
+            </script>
+        </div>
     </section>
-
 </body>
 </html>
