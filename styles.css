@@ -1,98 +1,70 @@
-body {
-    font-family: Arial, sans-serif;
+/* Reset CSS */
+* {
     margin: 0;
     padding: 0;
-    text-align: center;
+    box-sizing: border-box;
 }
 
-header {
-    background: #28a745;
-    color: white;
-    padding: 20px;
-}
-
-.logo {
-    width: 150px;
-}
-
-.hero {
-    margin: 0 auto;
-}
-
+/* Banner full màn hình */
 .banner {
     width: 100%;
-    max-width: 1200px;
-    display: block;
-    margin: auto;
+    height: 100vh;
+    object-fit: cover;
 }
 
-section {
-    padding: 20px;
+/* Tìm kiếm */
+.search-container {
+    text-align: center;
+    margin: 20px;
 }
 
-h2 {
-    color: #28a745;
-}
-
-#booking {
-    background: #f9f9f9;
-    padding: 20px;
-    border-radius: 8px;
-}
-
-#booking form {
-    display: flex;
-    flex-direction: column;
-    max-width: 500px;
-    margin: auto;
-}
-
-#booking label {
-    font-weight: bold;
-    margin-top: 10px;
-}
-
-#booking select, #booking input, #booking textarea {
-    width: 100%;
-    padding: 8px;
-    margin-top: 5px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
-
-#booking button {
-    background: #28a745;
-    color: white;
+.search-container input {
     padding: 10px;
+    margin: 5px;
+    width: 250px;
+}
+
+.search-btn {
+    padding: 10px 20px;
+    background: #ff6600;
+    color: white;
     border: none;
     cursor: pointer;
-    margin-top: 10px;
 }
 
-#booking button:hover {
-    background: #218838;
-}
-
-.gallery-grid {
+/* Thư viện ảnh */
+.gallery {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
     gap: 10px;
     padding: 20px;
+    justify-content: center;
 }
 
-.gallery-grid img {
+.gallery img {
     width: 100%;
-    aspect-ratio: 3/4;
+    aspect-ratio: 3 / 4;
     object-fit: cover;
+    border-radius: 5px;
 }
 
-.contact form {
-    max-width: 400px;
-    margin: auto;
+/* Đặt lịch */
+.booking-container {
+    padding: 20px;
+    text-align: center;
 }
 
-footer {
-    background: #28a745;
-    color: white;
+.booking-container select, .booking-container input {
+    display: block;
+    margin: 10px auto;
     padding: 10px;
+    width: 250px;
+}
+
+.book-btn {
+    padding: 10px 20px;
+    background: #009688;
+    color: white;
+    border: none;
+    cursor: pointer;
 }
