@@ -31,19 +31,23 @@
     height: 100px;
 }
 
-/* Gallery */
-.gallery {
-    display: grid;
-    grid-template-columns: repeat(7, 1fr);
-    gap: 10px;
+/* Giới thiệu */
+.intro {
+    text-align: center;
+    background: var(--bg-color);
     padding: 20px;
 }
 
-.gallery-item img {
-    width: 100%;
-    aspect-ratio: 3 / 4;
-    object-fit: cover;
-    border-radius: 5px;
+.intro h1 {
+    color: var(--main-color);
+    margin-bottom: 10px;
+}
+
+.intro p {
+    font-size: 16px;
+    max-width: 600px;
+    margin: auto;
+    line-height: 1.6;
 }
 
 /* Đặt lịch */
@@ -91,4 +95,19 @@
 
 .booking-section button:hover {
     background: #eee;
+}
+
+/* Gallery */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 10px;
+    padding: 20px;
+}
+
+.gallery-item img {
+    width: 100%;
+    aspect-ratio: 3 / 4;
+    object-fit: cover;
+    border-radius: 5px;
 }
