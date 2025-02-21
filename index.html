@@ -18,14 +18,11 @@
         <img src="logo.jpg" alt="FotoGo Logo">
     </div>
 
-    <!-- Gallery -->
-    <section class="gallery">
-        <!-- Thêm 49 ảnh vào đây -->
-        <script>
-            for (let i = 1; i <= 49; i++) {
-                document.write(`<div class="gallery-item"><img src="photo${i}.jpg" alt="Ảnh ${i}"></div>`);
-            }
-        </script>
+    <!-- Giới thiệu -->
+    <section class="intro">
+        <h1>Chào mừng đến với FotoGo!</h1>
+        <p>FotoGo là nền tảng kết nối bạn với những nhiếp ảnh gia chuyên nghiệp, giúp bạn dễ dàng đặt lịch chụp ảnh chỉ với vài thao tác trên điện thoại hoặc máy tính.  
+        Dù là ảnh cá nhân, cặp đôi, gia đình hay sự kiện, FotoGo sẽ giúp bạn lưu giữ khoảnh khắc một cách hoàn hảo!</p>
     </section>
 
     <!-- Form đặt lịch -->
@@ -70,6 +67,16 @@
 
             <button type="submit">Đặt Lịch</button>
         </form>
+    </section>
+
+    <!-- Gallery -->
+    <section class="gallery">
+        <!-- Thêm 49 ảnh vào đây -->
+        <script>
+            for (let i = 1; i <= 49; i++) {
+                document.write(`<div class="gallery-item"><img src="photo${i}.jpg" alt="Ảnh ${i}"></div>`);
+            }
+        </script>
     </section>
 
 </body>
