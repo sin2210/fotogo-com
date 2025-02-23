@@ -16,6 +16,56 @@
     <div class="logo-container">
         <img src="logo.jpg" alt="FotoGo Logo" class="logo">
     </div>
+<form class="booking-form" onsubmit="showSuccessMessage(event)">
+    <h2>Đặt lịch chụp ảnh</h2>
+
+    <!-- Thông tin khách hàng -->
+    <label for="full-name">Họ và Tên:</label>
+    <input type="text" id="full-name" name="full-name" required>
+
+    <label for="phone">Số điện thoại:</label>
+    <input type="tel" id="phone" name="phone" required>
+
+    <label for="email">Gmail:</label>
+    <input type="email" id="email" name="email" required>
+
+    <!-- Các lựa chọn đặt lịch -->
+    <label for="photographer">Chọn Photographer:</label>
+    <select id="photographer" name="photographer">
+        <option value="photographer1">Photographer 1</option>
+        <option value="photographer2">Photographer 2</option>
+    </select>
+
+    <label for="concept">Chọn Concept:</label>
+    <select id="concept" name="concept">
+        <option value="concept1">Concept 1</option>
+        <option value="concept2">Concept 2</option>
+    </select>
+
+    <label for="date">Chọn Ngày:</label>
+    <input type="date" id="date" name="date" required>
+
+    <label for="price">Chọn Giá:</label>
+    <select id="price" name="price">
+        <option value="low">Dưới 500k</option>
+        <option value="medium">500k - 1 triệu</option>
+        <option value="high">Trên 1 triệu</option>
+    </select>
+
+    <label for="equipment">Chụp bằng:</label>
+    <select id="equipment" name="equipment">
+        <option value="phone">Điện thoại</option>
+        <option value="camera">Máy ảnh</option>
+        <option value="both">Cả hai</option>
+    </select>
+
+    <button type="submit">Đặt Lịch</button>
+</form>
+
+<!-- Phần thông báo ẩn -->
+<div id="success-message" class="hidden">
+    📸 Đặt lịch thành công! Photographer sẽ liên hệ với bạn sớm nhất có thể.
+</div>
 
     <!-- Giới thiệu -->
     <section class="about">
